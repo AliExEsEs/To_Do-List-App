@@ -106,7 +106,7 @@ public class NotesDetailedActivity extends AppCompatActivity {
         startActivity(i);
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         finish();
-        Toast.makeText(this, "Post deleted", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Post Deleted", Toast.LENGTH_SHORT).show();
         
     }
 

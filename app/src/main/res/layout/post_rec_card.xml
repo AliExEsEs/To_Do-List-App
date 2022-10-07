@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/m_white">
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/mainCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:maxLines="1"
+                android:layout_marginRight="12dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="@color/tect_color"
+                android:textSize="18dp"
+                android:id="@+id/card_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="12dp"
+                android:text="Title" />
+
+            <TextView
+                android:maxLines="1"
+                android:layout_marginRight="12dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="@color/tect_color"
+                android:textSize="14dp"
+                android:id="@+id/card_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="6dp"
+                android:text="Description" />
+
+            <TextView
+                android:textSize="10dp"
+                android:id="@+id/card_date"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="32dp"
+                android:textColor="@color/tect_color"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
